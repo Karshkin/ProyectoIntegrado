@@ -1,1 +1,7 @@
 2617c0,127.0.0.1,GET,http://localhost:8000/,1486383029,,200
+0632ce,127.0.0.1,GET,http://localhost:8000/,1486384162,,200
+4b47d1,127.0.0.1,GET,http://localhost:8000/css/style.css,1486384163,327cff,200
+327cff,127.0.0.1,GET,http://localhost:8000/css/style.css,1486384163,,404
+57ae81,127.0.0.1,GET,http://localhost:8000/,1486384222,,200
+cb36c2,127.0.0.1,GET,http://localhost:8000/,1486384517,,200
+630ed7,127.0.0.1,GET,http://localhost:8000/,1486384576,,200
