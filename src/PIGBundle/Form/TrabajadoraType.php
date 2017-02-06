@@ -23,12 +23,16 @@ class TrabajadoraType extends AbstractType
             ->add('nombre',TextType::class)
             ->add('apellidos',TextType::class)
             ->add('direccion',TextType::class)
-            ->add('fechaAlta',DateType::class)
+            ->add('fechaAlta',DateType::class,array(
+              'years' => range(1900,2100)
+            ))
             ->add('puesto',TextType::class)
             ->add('noCuentaBanco',IntegerType::class)
             ->add('noSeguridadSocial',TextType::class)
             ->add('dNI',TextType::class)
-            ->add('fechaNac',DateType::class)
+            ->add('fechaNac',DateType::class,array(
+              'years' => range(1900,2100)
+            ))
             ->add('telefono',IntegerType::class)
             ->add('estado',TextType::class)
             ->add('Salvar',SubmitType::class)
