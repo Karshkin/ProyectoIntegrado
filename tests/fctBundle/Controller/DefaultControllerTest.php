@@ -1,6 +1,6 @@
 <?php
 
-namespace fctBundle\Tests\Controller;
+namespace PIGBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
