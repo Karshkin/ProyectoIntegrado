@@ -19,17 +19,18 @@ class ClienteType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('cIF',TextType::class)
-            ->add('domicilioFiscal',TextType::class)
+            ->add('CIF',TextType::class)
+            ->add('DomicilioFiscal',TextType::class)
             ->add('cP',IntegerType::class)
-            ->add('municipio',TextType::class)
-            ->add('provincia',TextType::class)
-            ->add('noCuentaBancaria',IntegerType::class)
-            ->add('personaContacto',TextType::class)
-            ->add('telefonoContacto',TextType::class)
-            ->add('telefonoMovilContacto',TextType::class)
-            ->add('razonSocial',TextType::class)
-        ;
+            ->add('Municipio',TextType::class)
+            ->add('Provincia',TextType::class)
+            ->add('NoCuentaBancaria',IntegerType::class)
+            ->add('PersonaContacto',TextType::class)
+            ->add('TelefonoContacto',TextType::class)
+            ->add('TelefonoMovilContacto',TextType::class)
+            ->add('RazonSocial',TextType::class)
+            ->add('Salvar',SubmitType::class)
+            ->add('Borrar',ResetType::class)        ;
     }
 
     /**

@@ -12,9 +12,9 @@ clientes_nuevo:
     defaults: { _controller: PIGBundle:Cliente:nuevoCliente }
 
 clientes_todos:
-    path:     /clientes/new
-    defaults: { _controller: PIGBundle:Cliente:nuevoCliente }
+    path:     /clientes/all
+    defaults: { _controller: PIGBundle:Cliente:clienteAll }
 
 clientes_exito:
-    path:     /clientes/all
+    path:     /clientes/msgExito
     defaults: { _controller: PIGBundle:Cliente:msgExito }

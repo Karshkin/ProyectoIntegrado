@@ -5,6 +5,7 @@ namespace PIGBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use PIGBundle\Entity\Cliente;
 use PIGBundle\Form\ClienteType;
+use Symfony\Component\HttpFoundation\Request;
 
 class ClienteController extends Controller
 {
@@ -17,7 +18,7 @@ class ClienteController extends Controller
 
     public function ClienteAllAction()
     {
-      $repository= $this->getDoctrine()->getRepository('gestorBundle:Cliente');
+      $repository= $this->getDoctrine()->getRepository('PIGBundle:Cliente');
       $clientes = $repository->findAll();
         return $this->render('PIGBundle:Clientes:all.html.twig',array("clientes"=>$clientes));
     }

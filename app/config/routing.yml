@@ -1,10 +1,6 @@
-fct:
-    resource: "@fctBundle/Resources/config/routing.yml"
-    prefix:   /fct
-
-landing:
-    resource: "@landingBundle/Resources/config/routing.yml"
-    prefix:   /landing
+PIG:
+    resource: "@PIGBundle/Resources/config/routing.yml"
+    prefix:   /
 
 app:
     resource: "@AppBundle/Controller/"
