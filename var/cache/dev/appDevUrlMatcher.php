@@ -132,6 +132,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/trabajadoras')) {
+            // trabajadoras_index
+            if ($pathinfo === '/trabajadoras') {
+                return array (  '_controller' => 'PIGBundle\\Controller\\TrabajadoraController::indexAction',  '_route' => 'trabajadoras_index',);
+            }
+
+            // trabajadoras_nueva
+            if ($pathinfo === '/trabajadoras/new') {
+                return array (  '_controller' => 'PIGBundle\\Controller\\TrabajadoraController::nuevaTrabajadoraAction',  '_route' => 'trabajadoras_nueva',);
+            }
+
+            // trabajadoras_todas
+            if ($pathinfo === '/trabajadoras/all') {
+                return array (  '_controller' => 'PIGBundle\\Controller\\TrabajadoraController::trabajadoraAllAction',  '_route' => 'trabajadoras_todas',);
+            }
+
+            // trabajadoras_exito
+            if ($pathinfo === '/trabajadoras/msgExito') {
+                return array (  '_controller' => 'PIGBundle\\Controller\\TrabajadoraController::msgExitoAction',  '_route' => 'trabajadoras_exito',);
+            }
+
+        }
+
         // homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

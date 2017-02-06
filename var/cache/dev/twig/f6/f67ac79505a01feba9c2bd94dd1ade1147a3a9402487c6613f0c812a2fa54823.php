@@ -15,11 +15,13 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5a34eea3f226b86a03ac0eca89b0ed1e37b3c766dc7734674c8ebb7d0a264f25 = $this->env->getExtension("native_profiler");
-        $__internal_5a34eea3f226b86a03ac0eca89b0ed1e37b3c766dc7734674c8ebb7d0a264f25->enter($__internal_5a34eea3f226b86a03ac0eca89b0ed1e37b3c766dc7734674c8ebb7d0a264f25_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:all.html.twig"));
+        $__internal_2f176584cb91c6297f88f1692afa9fb25600cec0225449125b2e5bb61ed3d2bf = $this->env->getExtension("native_profiler");
+        $__internal_2f176584cb91c6297f88f1692afa9fb25600cec0225449125b2e5bb61ed3d2bf->enter($__internal_2f176584cb91c6297f88f1692afa9fb25600cec0225449125b2e5bb61ed3d2bf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:all.html.twig"));
 
         // line 1
-        echo "<table>
+        echo "<a href=\"/\"><img src=\"http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg\"></img></a><br><br><br>
+
+<table>
 
   <tr>
     <td>CIF</td>
@@ -33,52 +35,52 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
     <td>Teléfono móvil de contacto</td>
     <td>Razón social</td>
   </tr>
-  
+
   ";
-        // line 16
+        // line 18
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["clientes"]) ? $context["clientes"] : $this->getContext($context, "clientes")));
         foreach ($context['_seq'] as $context["_key"] => $context["cliente"]) {
-            // line 17
+            // line 19
             echo "    <tr>
       <td>";
-            // line 18
+            // line 20
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "cIF", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 19
+            // line 21
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "domicilioFiscal", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 20
+            // line 22
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "cP", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 21
+            // line 23
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "municipio", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 22
+            // line 24
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "provincia", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 23
+            // line 25
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "noCuentaBancaria", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 24
+            // line 26
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "personaContacto", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 25
+            // line 27
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "telefonoContacto", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 26
+            // line 28
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "telefonoMovilContacto", array()), "html", null, true);
             echo "</td>
       <td>";
-            // line 27
+            // line 29
             echo twig_escape_filter($this->env, $this->getAttribute($context["cliente"], "razonSocial", array()), "html", null, true);
             echo "</td>
     </tr>
@@ -87,11 +89,13 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['cliente'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 32
         echo "</table>
+
+<br><a href=\"/clientes\">Clientes</a>
 ";
         
-        $__internal_5a34eea3f226b86a03ac0eca89b0ed1e37b3c766dc7734674c8ebb7d0a264f25->leave($__internal_5a34eea3f226b86a03ac0eca89b0ed1e37b3c766dc7734674c8ebb7d0a264f25_prof);
+        $__internal_2f176584cb91c6297f88f1692afa9fb25600cec0225449125b2e5bb61ed3d2bf->leave($__internal_2f176584cb91c6297f88f1692afa9fb25600cec0225449125b2e5bb61ed3d2bf_prof);
 
     }
 
@@ -107,9 +111,11 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
 
     public function getDebugInfo()
     {
-        return array (  91 => 30,  82 => 27,  78 => 26,  74 => 25,  70 => 24,  66 => 23,  62 => 22,  58 => 21,  54 => 20,  50 => 19,  46 => 18,  43 => 17,  39 => 16,  22 => 1,);
+        return array (  93 => 32,  84 => 29,  80 => 28,  76 => 27,  72 => 26,  68 => 25,  64 => 24,  60 => 23,  56 => 22,  52 => 21,  48 => 20,  45 => 19,  41 => 18,  22 => 1,);
     }
 }
+/* <a href="/"><img src="http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg"></img></a><br><br><br>*/
+/* */
 /* <table>*/
 /* */
 /*   <tr>*/
@@ -124,7 +130,7 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
 /*     <td>Teléfono móvil de contacto</td>*/
 /*     <td>Razón social</td>*/
 /*   </tr>*/
-/*   */
+/* */
 /*   {% for cliente in clientes %}*/
 /*     <tr>*/
 /*       <td>{{ cliente.cIF }}</td>*/
@@ -140,4 +146,6 @@ class __TwigTemplate_ca531e8aebc2fdadd633b988486482e567fc53f985639a00b2e2c114f9d
 /*     </tr>*/
 /*   {% endfor %}*/
 /* </table>*/
+/* */
+/* <br><a href="/clientes">Clientes</a>*/
 /* */

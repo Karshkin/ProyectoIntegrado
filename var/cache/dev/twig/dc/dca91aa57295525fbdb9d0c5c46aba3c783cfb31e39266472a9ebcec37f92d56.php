@@ -15,14 +15,18 @@ class __TwigTemplate_34f7ca146ddf58a70cba92ae514fb1baadf58828636cc4b4111c5e5d539
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2178845552d74933be7469cd6f087bc79cee906d2d9bd482a3633244bece5daa = $this->env->getExtension("native_profiler");
-        $__internal_2178845552d74933be7469cd6f087bc79cee906d2d9bd482a3633244bece5daa->enter($__internal_2178845552d74933be7469cd6f087bc79cee906d2d9bd482a3633244bece5daa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:index.html.twig"));
+        $__internal_d4e6822ccf88e8330bb712c3a48ee8c97af678a33c085442d886ffb1a30ed934 = $this->env->getExtension("native_profiler");
+        $__internal_d4e6822ccf88e8330bb712c3a48ee8c97af678a33c085442d886ffb1a30ed934->enter($__internal_d4e6822ccf88e8330bb712c3a48ee8c97af678a33c085442d886ffb1a30ed934_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:index.html.twig"));
 
         // line 1
-        echo "Bienvenido a la zona de los clientes
+        echo "<a href=\"/\"><img src=\"http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg\"></img></a>
+<h2>Bienvenido a la zona de los clientes</h2>
+
+<a href=\"/clientes/new\">Nuevo cliente</a><br>
+<a href=\"/clientes/all\">Todos los clientes</a>
 ";
         
-        $__internal_2178845552d74933be7469cd6f087bc79cee906d2d9bd482a3633244bece5daa->leave($__internal_2178845552d74933be7469cd6f087bc79cee906d2d9bd482a3633244bece5daa_prof);
+        $__internal_d4e6822ccf88e8330bb712c3a48ee8c97af678a33c085442d886ffb1a30ed934->leave($__internal_d4e6822ccf88e8330bb712c3a48ee8c97af678a33c085442d886ffb1a30ed934_prof);
 
     }
 
@@ -36,5 +40,9 @@ class __TwigTemplate_34f7ca146ddf58a70cba92ae514fb1baadf58828636cc4b4111c5e5d539
         return array (  22 => 1,);
     }
 }
-/* Bienvenido a la zona de los clientes*/
+/* <a href="/"><img src="http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg"></img></a>*/
+/* <h2>Bienvenido a la zona de los clientes</h2>*/
+/* */
+/* <a href="/clientes/new">Nuevo cliente</a><br>*/
+/* <a href="/clientes/all">Todos los clientes</a>*/
 /* */

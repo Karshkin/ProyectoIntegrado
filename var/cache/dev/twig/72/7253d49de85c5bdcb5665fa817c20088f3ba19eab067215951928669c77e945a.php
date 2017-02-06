@@ -15,14 +15,20 @@ class __TwigTemplate_7d094651003b22fefa46773b80334623c93be5d2d1cb6eb0dd82ab9defb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_6a23fd9db4b7b51fd0834963058ca8ff43b418aa8ec9b2c2d2fa522506c1a61a = $this->env->getExtension("native_profiler");
-        $__internal_6a23fd9db4b7b51fd0834963058ca8ff43b418aa8ec9b2c2d2fa522506c1a61a->enter($__internal_6a23fd9db4b7b51fd0834963058ca8ff43b418aa8ec9b2c2d2fa522506c1a61a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:msgExito.html.twig"));
+        $__internal_1d2cbf73c3d8105c6322403aaf5ec7ebeab7463e51cedab10bce32290ae2b1e9 = $this->env->getExtension("native_profiler");
+        $__internal_1d2cbf73c3d8105c6322403aaf5ec7ebeab7463e51cedab10bce32290ae2b1e9->enter($__internal_1d2cbf73c3d8105c6322403aaf5ec7ebeab7463e51cedab10bce32290ae2b1e9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Clientes:msgExito.html.twig"));
 
         // line 1
-        echo "Cliente creado correctamente
+        echo "<a href=\"/\"><img src=\"http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg\"></img></a><br><br><br>
+
+<script>
+  alert(\"Cliente creado correctamente\");
+</script>
+
+<br><a href=\"/clientes\">Volver a clientes</a><br>
 ";
         
-        $__internal_6a23fd9db4b7b51fd0834963058ca8ff43b418aa8ec9b2c2d2fa522506c1a61a->leave($__internal_6a23fd9db4b7b51fd0834963058ca8ff43b418aa8ec9b2c2d2fa522506c1a61a_prof);
+        $__internal_1d2cbf73c3d8105c6322403aaf5ec7ebeab7463e51cedab10bce32290ae2b1e9->leave($__internal_1d2cbf73c3d8105c6322403aaf5ec7ebeab7463e51cedab10bce32290ae2b1e9_prof);
 
     }
 
@@ -36,5 +42,11 @@ class __TwigTemplate_7d094651003b22fefa46773b80334623c93be5d2d1cb6eb0dd82ab9defb
         return array (  22 => 1,);
     }
 }
-/* Cliente creado correctamente*/
+/* <a href="/"><img src="http://3.bp.blogspot.com/-h0LmXnazAQI/Tee5QD2FFQI/AAAAAAAAAAk/D3NutduIps8/s760/logo.jpg"></img></a><br><br><br>*/
+/* */
+/* <script>*/
+/*   alert("Cliente creado correctamente");*/
+/* </script>*/
+/* */
+/* <br><a href="/clientes">Volver a clientes</a><br>*/
 /* */

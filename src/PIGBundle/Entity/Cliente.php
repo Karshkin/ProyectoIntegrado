@@ -3,6 +3,7 @@
 namespace PIGBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Cliente
@@ -25,6 +26,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="CIF", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $cIF;
 
@@ -32,6 +34,13 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Domicilio_Fiscal", type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\Length(
+     *      min = 4,
+     *      max = 100,
+     *      minMessage = "Minimo 4",
+     *      maxMessage = "Maximo 100"
+     * )
      */
     private $domicilioFiscal;
 
@@ -39,6 +48,13 @@ class Cliente
      * @var int
      *
      * @ORM\Column(name="CP", type="integer")
+     * @Assert\NotBlank()
+     * @Assert\Length(
+     *      min = 5,
+     *      max = 5,
+     *      minMessage = "Minimo 5 cifras",
+     *      maxMessage = "Maximo 5 cifras"
+     * )
      */
     private $cP;
 
@@ -46,6 +62,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Municipio", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $municipio;
 
@@ -53,6 +70,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Provincia", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $provincia;
 
@@ -60,6 +78,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="No_Cuenta_Bancaria", type="integer")
+     * @Assert\NotBlank()
      */
     private $noCuentaBancaria;
 
@@ -67,6 +86,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Persona_Contacto", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $personaContacto;
 
@@ -74,6 +94,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Telefono_Contacto", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $telefonoContacto;
 
@@ -81,6 +102,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="TelefonoMovil_Contacto", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $telefonoMovilContacto;
 
@@ -88,6 +110,7 @@ class Cliente
      * @var string
      *
      * @ORM\Column(name="Razon_Social", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $razonSocial;
 

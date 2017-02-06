@@ -3,6 +3,7 @@
 namespace PIGBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Trabajadora
@@ -25,6 +26,7 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="Nombre", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $nombre;
 
@@ -32,6 +34,7 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="Apellidos", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $apellidos;
 
@@ -39,6 +42,13 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="Direccion", type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\Length(
+     *      min = 4,
+     *      max = 100,
+     *      minMessage = "Minimo 4 caracteres",
+     *      maxMessage = "Maximo 32 caracteres"
+     * )
      */
     private $direccion;
 
@@ -46,6 +56,7 @@ class Trabajadora
      * @var \DateTime
      *
      * @ORM\Column(name="Fecha_Alta", type="date")
+     * @Assert\NotBlank()
      */
     private $fechaAlta;
 
@@ -53,6 +64,7 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="Puesto", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $puesto;
 
@@ -60,6 +72,7 @@ class Trabajadora
      * @var int
      *
      * @ORM\Column(name="No_Cuenta_Banco", type="integer")
+     * @Assert\NotBlank()
      */
     private $noCuentaBanco;
 
@@ -67,6 +80,7 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="No_Seguridad_Social", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $noSeguridadSocial;
 
@@ -74,6 +88,13 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="DNI", type="string", length=9, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Length(
+     *      min = 10,
+     *      max = 10,
+     *      minMessage = "Escribe un dni en formato xxxxxxxx-A",
+     *      maxMessage = "Escribe un dni en formato xxxxxxxx-A"
+     * )
      */
     private $dNI;
 
@@ -81,6 +102,7 @@ class Trabajadora
      * @var \DateTime
      *
      * @ORM\Column(name="Fecha_Nac", type="date")
+     * @Assert\NotBlank()
      */
     private $fechaNac;
 
@@ -88,6 +110,7 @@ class Trabajadora
      * @var int
      *
      * @ORM\Column(name="Telefono", type="integer", unique=true)
+     * @Assert\NotBlank()
      */
     private $telefono;
 
@@ -95,6 +118,7 @@ class Trabajadora
      * @var string
      *
      * @ORM\Column(name="Estado", type="string", length=255)
+     * @Assert\NotBlank()
      */
     private $estado;
 
