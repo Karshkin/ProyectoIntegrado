@@ -1,3 +1,20 @@
 pig_homepage:
     path:     /
     defaults: { _controller: PIGBundle:Default:index }
+
+
+clientes_index:
+    path:     /clientes
+    defaults: { _controller: PIGBundle:Cliente:index }
+
+clientes_nuevo:
+    path:     /clientes/new
+    defaults: { _controller: PIGBundle:Cliente:nuevoCliente }
+
+clientes_todos:
+    path:     /clientes/new
+    defaults: { _controller: PIGBundle:Cliente:nuevoCliente }
+
+clientes_exito:
+    path:     /clientes/all
+    defaults: { _controller: PIGBundle:Cliente:msgExito }
