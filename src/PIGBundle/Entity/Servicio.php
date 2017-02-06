@@ -9,6 +9,15 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="servicio")
  * @ORM\Entity(repositoryClass="PIGBundle\Repository\ServicioRepository")
+ * @ORM\InheritanceType("JOINED")
+ * @ORM\DiscriminatorColumn(name="productType", type="string")
+ * @ORM\DiscriminatorMap({
+ *   "Servicio" = "PIGBundle\Entity\Servicio",
+ *   "Catering" = "PIGBundle\Entity\Catering",
+ *   "Limpieza" = "PIGBundle\Entity\Limpieza",
+ *   "Mantenimiento" = "PIGBundle\Entity\Mantenimiento",
+ *   "Otro" = "PIGBundle\Entity\Otro",
+ * })
  */
 class Servicio
 {
@@ -218,4 +227,3 @@ class Servicio
         return $this->estado;
     }
 }
-
