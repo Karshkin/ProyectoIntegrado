@@ -11,7 +11,6 @@ class __TwigTemplate_93767be4a3b743381a7cf4d35ba3a6170ecf3ddd7a5466d9cf756f97e1e
         $this->parent = $this->loadTemplate("::base.html.twig", "PIGBundle:Default:index.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -23,54 +22,110 @@ class __TwigTemplate_93767be4a3b743381a7cf4d35ba3a6170ecf3ddd7a5466d9cf756f97e1e
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e6cfd146f83011b560376e222f900119db14246f9d3200379d1b573e05afaba6 = $this->env->getExtension("native_profiler");
-        $__internal_e6cfd146f83011b560376e222f900119db14246f9d3200379d1b573e05afaba6->enter($__internal_e6cfd146f83011b560376e222f900119db14246f9d3200379d1b573e05afaba6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Default:index.html.twig"));
+        $__internal_950b217fddad45f762ab65e9de20b7f79957055e64f8aea9ff8ce884f1f16fa6 = $this->env->getExtension("native_profiler");
+        $__internal_950b217fddad45f762ab65e9de20b7f79957055e64f8aea9ff8ce884f1f16fa6->enter($__internal_950b217fddad45f762ab65e9de20b7f79957055e64f8aea9ff8ce884f1f16fa6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PIGBundle:Default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e6cfd146f83011b560376e222f900119db14246f9d3200379d1b573e05afaba6->leave($__internal_e6cfd146f83011b560376e222f900119db14246f9d3200379d1b573e05afaba6_prof);
+        $__internal_950b217fddad45f762ab65e9de20b7f79957055e64f8aea9ff8ce884f1f16fa6->leave($__internal_950b217fddad45f762ab65e9de20b7f79957055e64f8aea9ff8ce884f1f16fa6_prof);
 
     }
 
     // line 2
     public function block_title($context, array $blocks = array())
     {
-        $__internal_d561d3dafd89faf6eb97014675a6d7212229bb6aaad17751e6911c907a4ff482 = $this->env->getExtension("native_profiler");
-        $__internal_d561d3dafd89faf6eb97014675a6d7212229bb6aaad17751e6911c907a4ff482->enter($__internal_d561d3dafd89faf6eb97014675a6d7212229bb6aaad17751e6911c907a4ff482_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_a665211957bdc4aeedb7f877c0efc40572dd1f2f6f615889ba5c745351a47c47 = $this->env->getExtension("native_profiler");
+        $__internal_a665211957bdc4aeedb7f877c0efc40572dd1f2f6f615889ba5c745351a47c47->enter($__internal_a665211957bdc4aeedb7f877c0efc40572dd1f2f6f615889ba5c745351a47c47_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "PIG";
         
-        $__internal_d561d3dafd89faf6eb97014675a6d7212229bb6aaad17751e6911c907a4ff482->leave($__internal_d561d3dafd89faf6eb97014675a6d7212229bb6aaad17751e6911c907a4ff482_prof);
+        $__internal_a665211957bdc4aeedb7f877c0efc40572dd1f2f6f615889ba5c745351a47c47->leave($__internal_a665211957bdc4aeedb7f877c0efc40572dd1f2f6f615889ba5c745351a47c47_prof);
 
     }
 
-    // line 3
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_f85cbc58b573110b9312701c75158a579a04b4141a2543b1b0ee49201befea4e = $this->env->getExtension("native_profiler");
-        $__internal_f85cbc58b573110b9312701c75158a579a04b4141a2543b1b0ee49201befea4e->enter($__internal_f85cbc58b573110b9312701c75158a579a04b4141a2543b1b0ee49201befea4e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 4
-        echo "    <link rel=\"stylesheet\" href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("css/style.css"), "html", null, true);
-        echo "\">
-  ";
-        
-        $__internal_f85cbc58b573110b9312701c75158a579a04b4141a2543b1b0ee49201befea4e->leave($__internal_f85cbc58b573110b9312701c75158a579a04b4141a2543b1b0ee49201befea4e_prof);
-
-    }
-
-    // line 8
+    // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_fae9e175b17b06fa773a242d83952bc1289f453c0cf3f2dedbe75b982071014a = $this->env->getExtension("native_profiler");
-        $__internal_fae9e175b17b06fa773a242d83952bc1289f453c0cf3f2dedbe75b982071014a->enter($__internal_fae9e175b17b06fa773a242d83952bc1289f453c0cf3f2dedbe75b982071014a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9fcc270cc175da567a81bd9bd1250239926ffa28cad5c981c36bbad4b7b651cd = $this->env->getExtension("native_profiler");
+        $__internal_9fcc270cc175da567a81bd9bd1250239926ffa28cad5c981c36bbad4b7b651cd->enter($__internal_9fcc270cc175da567a81bd9bd1250239926ffa28cad5c981c36bbad4b7b651cd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 9
-        echo "
+        // line 5
+        echo "<!-- Portfolio Grid Section -->
+<section id=\"portfolio\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-lg-12 text-center\">
+                <h2>Portfolio</h2>
+                <hr class=\"star-primary\">
+            </div>
+        </div>
+        <div class=\"row\">
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal1\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/cabin.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal2\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/cake.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal3\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/circus.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal4\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/game.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal5\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/safe.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+            <div class=\"col-sm-4 portfolio-item\">
+                <a href=\"#portfolioModal6\" class=\"portfolio-link\" data-toggle=\"modal\">
+                    <div class=\"caption\">
+                        <div class=\"caption-content\">
+                            <i class=\"fa fa-search-plus fa-3x\"></i>
+                        </div>
+                    </div>
+                    <img src=\"img/portfolio/submarine.png\" class=\"img-responsive\" alt=\"\">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 ";
         
-        $__internal_fae9e175b17b06fa773a242d83952bc1289f453c0cf3f2dedbe75b982071014a->leave($__internal_fae9e175b17b06fa773a242d83952bc1289f453c0cf3f2dedbe75b982071014a_prof);
+        $__internal_9fcc270cc175da567a81bd9bd1250239926ffa28cad5c981c36bbad4b7b651cd->leave($__internal_9fcc270cc175da567a81bd9bd1250239926ffa28cad5c981c36bbad4b7b651cd_prof);
 
     }
 
@@ -86,17 +141,85 @@ class __TwigTemplate_93767be4a3b743381a7cf4d35ba3a6170ecf3ddd7a5466d9cf756f97e1e
 
     public function getDebugInfo()
     {
-        return array (  70 => 9,  64 => 8,  54 => 4,  48 => 3,  36 => 2,  11 => 1,);
+        return array (  53 => 5,  47 => 4,  35 => 2,  11 => 1,);
     }
 }
 /* {% extends '::base.html.twig' %}*/
 /* {% block title %}PIG{% endblock %}*/
-/*   {% block stylesheets %}*/
-/*     <link rel="stylesheet" href="{{ asset('css/style.css') }}">*/
-/*   {% endblock %}*/
-/* */
 /* */
 /* {% block body %}*/
-/* */
+/* <!-- Portfolio Grid Section -->*/
+/* <section id="portfolio">*/
+/*     <div class="container">*/
+/*         <div class="row">*/
+/*             <div class="col-lg-12 text-center">*/
+/*                 <h2>Portfolio</h2>*/
+/*                 <hr class="star-primary">*/
+/*             </div>*/
+/*         </div>*/
+/*         <div class="row">*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/cabin.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/cake.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/circus.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/game.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/safe.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*             <div class="col-sm-4 portfolio-item">*/
+/*                 <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">*/
+/*                     <div class="caption">*/
+/*                         <div class="caption-content">*/
+/*                             <i class="fa fa-search-plus fa-3x"></i>*/
+/*                         </div>*/
+/*                     </div>*/
+/*                     <img src="img/portfolio/submarine.png" class="img-responsive" alt="">*/
+/*                 </a>*/
+/*             </div>*/
+/*         </div>*/
+/*     </div>*/
+/* </section>*/
 /* {% endblock %}*/
 /* */
